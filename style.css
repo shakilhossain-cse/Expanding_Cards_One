@@ -30,7 +30,7 @@
   }
   .container{
       display: flex;
-      width:80vh;
+      width:80vw;
   }
   .card{
       margin:10px;
@@ -38,4 +38,17 @@
       color: aliceblue;
       background-size: cover;
       background-position: center;
+      position: relative;
+      flex:1;
+  }
+   .active{
+       flex: 5;
+   }
+  .card > h2{
+      position: absolute;
+      font-size: 2rem;
+      bottom: 20px;
+      left: 20px;
+      margin: 0;
+      opacity: 0;
   }
